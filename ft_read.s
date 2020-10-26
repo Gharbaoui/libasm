@@ -1,8 +1,8 @@
 section .text
 extern ___error
-global _myread
+global _ft_read
 
-_myread:
+_ft_read:
 	mov rax, 0x2000003
 	syscall
 	jc error

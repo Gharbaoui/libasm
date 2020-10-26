@@ -1,13 +1,13 @@
 section .text
 
-global _mystrdup
+global _ft_strdup
 extern _malloc
-extern _mystrlen
-extern _mystrcpy
+extern _ft_strlen
+extern _ft_strcpy
 
-_mystrdup:
+_ft_strdup:
 	push rdi
-	call _mystrlen
+	call _ft_strlen
 	add rax, 1
 	mov rdi, rax
 	call _malloc
@@ -15,7 +15,7 @@ _mystrdup:
 	je error
 	pop rsi
 	mov rdi, rax
-	call _mystrcpy
+	call _ft_strcpy
 	ret
 	error:
 	mov r9, 12

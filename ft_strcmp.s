@@ -1,8 +1,8 @@
 section .text
 
-global _mystrcmp
+global _ft_strcmp
 
-_mystrcmp:
+_ft_strcmp:
 	loop:
 		mov al, byte [rdi]
 		mov bl, byte [rsi]

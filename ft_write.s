@@ -1,9 +1,9 @@
 section .text
 
-global _mywrite
+global _ft_write
 extern ___error
 
-_mywrite:
+_ft_write:
 	mov rax, 0x2000004
 	syscall
 	jc error
