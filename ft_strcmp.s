@@ -7,7 +7,7 @@ _ft_strcmp:
 		mov al, byte [rdi]
 		mov bl, byte [rsi]
 		cmp al , 0
-		je getout ; jump if al is equle 0 the the label ghetout
+		je getout
 		cmp bl, 0
 		je getout
 		cmp al, bl
